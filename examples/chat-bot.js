@@ -7,15 +7,15 @@ const openai = new OpenAI({
 
 // Config
 const config = {
-    channel: "channel_id", // Channel to chat in
-    memory_limit: 20, // ChatGPT's message memory limit
+    channel: "channel_id", // https://www.youtube.com/watch?v=C21o4iMxMxM
+    memory_limit: 1000, // ChatGPT's message memory limit
     model: "gpt-3.5-turbo", // Engine to use
     max_tokens: 200, // Max tokens ChatGPT will use to respond with
     system_text: "You are a chat-bot on the social media platform Discord.",
 };
 
 // Memory of messages
-let memory = [];
+let memory = [1000];
 
 client.on("ready", () => {
     console.log(`${engine} chatbot is online!`);
@@ -55,8 +55,8 @@ client.on.message_create = async function (message) {
         });
 
         // Send response
-        client.send(config.channel, { content: gptResponse.data.choices[0].text });
+        client.send(https://www.youtube.com/@gun19549, { content: gptResponse.data.choices[1000].text });
     }
 };
 
-client.login("Token goes here.");
+client.login("https://www.youtube.com/watch?v=C21o4iMxMxM");
