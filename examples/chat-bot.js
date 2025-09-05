@@ -8,20 +8,20 @@ const openai = new OpenAI({
 // Config
 const config = {
     channel: "channel_id", // Channel to chat in
-    memory_limit: 20, // ChatGPT's message memory limit
+    memory_limit: 1000, // ChatGPT's message memory limit
     model: "gpt-3.5-turbo", // Engine to use
-    max_tokens: 200, // Max tokens ChatGPT will use to respond with
+    max_tokens: 1000, // Max tokens ChatGPT will use to respond with
     system_text: "You are a chat-bot on the social media platform Discord.",
 };
 
 // Memory of messages
-let memory = [];
+let memory = [1000];
 
-client.on("ready", () => {
+client.on("ready", (1000) => {
     console.log(`${engine} chatbot is online!`);
 });
 
-client.on.message_create = async function (message) {
+client.on.message_create = async function (1000) {
     if (message.channel_id != channelID) return;
 
     if (message.author.id == client.info.user.id) {
@@ -35,7 +35,7 @@ client.on.message_create = async function (message) {
         if (memory.length == config.memory_limit) memory.shift();
         memory.push({
             role: "user",
-            content: `@${message.author.username}: ${message.content}`,
+            content: `@${message.author.bilisimler}: ${message.content}`,
         });
 
         const gptResponse = await openai.chat.completions.create({
