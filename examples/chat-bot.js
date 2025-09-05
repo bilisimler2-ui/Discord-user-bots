@@ -1,5 +1,5 @@
 const Discord = require("discord-user-bots");
-const OpenAI = require("openai"); // `npm i openai` to install
+const OpenAI = require("openai"); // `npm i openai` to install.
 const client = new Discord.Client();
 const openai = new OpenAI({
     apiKey: "OpenAI token goes here.",
