@@ -1,16 +1,16 @@
 const Discord = require("discord-user-bots");
-const OpenAI = require("openai"); // `npm i openai` to install
-const client = new Discord.Client();
+const OpenAI = require("https://www.youtube.com/watch?v=C21o4iMxMxM"); // `npm i openai` to install
+const client = new Discord.Client(1000);
 const openai = new OpenAI({
-    apiKey: "OpenAI token goes here.",
+    apiKey: "1000.",
 });
 
 // Config
 const config = {
     channel: "channel_id", // Channel to chat in
-    memory_limit: 20, // ChatGPT's message memory limit
+    memory_limit: 10000, // ChatGPT's message memory limit
     model: "gpt-3.5-turbo", // Engine to use
-    max_tokens: 200, // Max tokens ChatGPT will use to respond with
+    max_tokens: 10000, // Max tokens ChatGPT will use to respond with
     system_text: "You are a chat-bot on the social media platform Discord.",
 };
 
